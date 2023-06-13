@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1>Uduak</h1>
+                <ul id="side-menu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><i class="fa fa-times-circle close" onclick="closemenu()"></i>
+                    </li>
+                </ul>
+                <i class="fa fa-bars open" onclick="openmenu()"></i>
+
+            </nav>
+            <div class="front-text">
+                <p>Software Engineer</p>
+                <h1>Hi I'm <span>Uduak</span> <br>Ben from Nigeria</h1>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- -----------------------about---------------------------- -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/ben2.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1>About Me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error asperiores dolor, vel excepturi maiores nam nemo veniam ab facilis accusantium iusto ad, 
+                        molestias </p>
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>  
+                    
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Sys-Admin</span> <br>Support and Manage computer Devices and networks</li>
+                            <li><span>Web Development</span> <br> Websites Development</li>
+                            <li><span>App Development</span> <br> Building Android/iOS Apps</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Evijet ICT Solutions</span> <br>System Administrator</li>
+                            <li><span>Aze Global Systems</span><br> IT Support Technician</li>
+                            <li><span>Uduakex Global Solutions</span> <br> Software Developer</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>FSLC</span> <br>Confidence College</li>
+                            <li><span>WAEC</span> <br> Confidence Group of Christian Schools</li>
+                            <li><span>BSc</span> <br>Federal University Otuoke</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="services">
+        <div class="container">
+            <h1>My Services</h1>
+            <div class="services-list">
+                <div>
+                    <h3>Web Design</h3>
+                    <p>I create and maintain websites. I am also responsible for the site's technical aspects</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <h3>App Design</h3>
+                    <p>I write software programs for use across mobile operating systems, including Apple, Android, and Windows devices. Once applications are created, I am also responsible for testing the application and providing updates whenever necessary.</p>
+                    <a href="#">Learn More</a>
+                </div>
+
+                <div>
+                    <h3>System Administrator</h3>
+                    <p>I support, troubleshoot, and maintain computer servers and networks, I also make sure an organization's computer systems are functioning and meet the needs of the organization</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="portfolio">
+        <div class="container">
+            <h1>My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/app1.png" alt="">
+                    <div class="layer">
+                        <h2>Online App</h2>
+                        <p>This App connects developers around the world</p>
+                        <a href="#">Link</a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/app2.png" alt="">
+                    <div class="layer">
+                        <h2>Online App</h2>
+                        <p>This App connects developers around the world</p>
+                        <a href="#">Link</a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/app4.png" alt="">
+                    <div class="layer">
+                        <h2>Online App</h2>
+                        <p>This App connects developers around the world</p>
+                        <a href="#">Link</a>
+                    </div>
+                </div>
+            </div>
+            <button class="btn">See More</button>
+        </div>
+    </div>
+
+    <!-- ----------------------------contact-------------------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h2>Contact Me</h2>
+                <p>contact@example.com</p>
+                <p>089329729989</p>
+                <button class="btn" download>Download Cv</button>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" placeholder="Your Name">
+                    <input type="email" placeholder="Your Email">
+                    <textarea rows="10" placeholder="Your Message"></textarea>
+                    <button class="btn">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    
+
+
+    <script src="script.js"></script>
+</body>
+</html>
